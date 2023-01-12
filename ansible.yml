@@ -9,7 +9,7 @@
       aws_secret_key: uVKWzsgxJH7sifyPr5sIjAF/HVjI1X28s9hppBVd
       state: present
       region: ap-south-1
-      policy: "{{ lookup('file','mybucket_policy.json') }}"
+     # policy: "{{ lookup('file','mybucket_policy.json') }}"
       versioning: no
       tags:
          name: latestbucket
