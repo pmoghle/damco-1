@@ -7,7 +7,10 @@
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:*",
-            "Resource": "arn:aws:s3:::latestbucket/*"
+            "Resource": [
+                        "arn:aws:s3:::latestbucket",
+                        "arn:aws:s3:::latestbucket/*"
+                ]
         }
     ]
 }
