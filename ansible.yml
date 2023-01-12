@@ -4,7 +4,7 @@
   tasks:
   - name: create S3 bucket
     s3_bucket:
-      name: latestbucket
+      name: 12latestbucket
       aws_access_key: AKIAZOGSWYVYIE2JKISS
       aws_secret_key: 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
       state: present
@@ -12,5 +12,5 @@
      # policy: "{{ lookup('file','mybucket_policy.json') }}"
       versioning: no
       tags:
-         name: latestbucket
+         name: 12latestbucket
          type: example
