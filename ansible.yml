@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  connection: local 
+  tasks:
+  - name: create S3 bucket
+    s3_bucket:
+      name: zxcvbnmbucket
+      aws_access_key: AKIAZOGSWYVYIE2JKISS
+      aws_secret_key: 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
+      state: present
+      region: ap-south-1
+      versioning: no
+      tags:
+         name: zxcvbnmbucket
+         type: example
