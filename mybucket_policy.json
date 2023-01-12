@@ -1,0 +1,13 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1673517492542",
+    "Statement": [
+        {
+            "Sid": "Stmt1673517490883",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::damcobucket/*"
+        }
+    ]
+}
